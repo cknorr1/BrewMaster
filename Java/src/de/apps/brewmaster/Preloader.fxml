@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.ProgressBar?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="750" prefWidth="1000" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<ProgressBar fx:id="progressBar" prefHeight="60" prefWidth="600.0" 
+		progress="0.0"/>
+	</children>   
+	
+	<stylesheets>
+    	<URL value="@user_interface/control/css/preloader.css" />
+    </stylesheets>
+</StackPane>

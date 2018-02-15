@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="brewStepTab" text="Schritte" >
+          </Tab>
+          <Tab fx:id="liveDataTab" text="Live Daten" >
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+   
+       <stylesheets>
+      <URL value="@../control/css/brew-step-tree.css" />
+    </stylesheets>
+</AnchorPane>

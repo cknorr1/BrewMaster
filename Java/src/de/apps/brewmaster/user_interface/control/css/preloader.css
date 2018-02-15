@@ -1,0 +1,15 @@
+#stack-pane{
+	-fx-background-image: url("splash_screen02.png");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1000 800;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.progress-bar > .bar {
+/*   -fx-text-box-border: forestgreen; */
+/*   -fx-control-inner-background: url("beer.jpg"); */
+-fx-background-image: url("beer.jpg");
+-fx-background-repeat: no-repeat;
+-fx-background-position: center center;
+}

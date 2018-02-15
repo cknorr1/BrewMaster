@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:element name="brewRecipe" type="brewRecipe" />
+
+	<xsd:complexType name="brewRecipe">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="brewStep" type="brewStep"/>
+		</xsd:sequence>
+		<xsd:attribute name="recipeID" type ="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="brewStep">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="brewStepID" type="brewStepID"/>
+			<xsd:element name="brewStepParameter" type="brewStepParameter"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="brewStepID">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="MASHING"/>
+			<xsd:enumeration value="PROTEINE_REST"/>
+			<xsd:enumeration value="MALTOSE_REST"/>
+			<xsd:enumeration value="IODINE_TEST"/>
+			<xsd:enumeration value="PURIFICATION"/>
+			<xsd:enumeration value="ON_TRUANT"/>
+			<xsd:enumeration value="WORT_MEASURING"/>
+			<xsd:enumeration value="HOPING"/>
+			<xsd:enumeration value="WORT_BOIL"/>
+			<xsd:enumeration value="SPINDLING"/>
+			<xsd:enumeration value="HOT_TRUB_REMOVAL"/>
+			<xsd:enumeration value="COOLING_DOWN"/>
+			<xsd:enumeration value="YEAST_ADD"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="brewStepParameter">
+		<xsd:choice>
+			<xsd:element name="duration" type="duration"/>
+			<xsd:element name="temperature" type="temperature"/>
+			<xsd:element name="stirringSpeed" type="stirringSpeed"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="duration">
+		<xsd:restriction base="xsd:long">
+		      <xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>	
+	
+	<xsd:simpleType name="temperature">
+		<xsd:restriction base="xsd:integer">
+		      <xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="stirringSpeed">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="NO"/>
+			<xsd:enumeration value="SLOW"/>
+			<xsd:enumeration value="FAST"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
+

@@ -1,0 +1,47 @@
+<{
+   "name":"Pils",
+   "recipe": [
+      {
+         "name":"Einmaischen = MASHING",
+         "temperature": 65.0,
+         "duration": 0.0,
+         "stir_speed": 10
+      },
+      {
+         "name":"Eiweißrast = PROTEIN_REST",
+         "temperature": 63.0,
+         "duration": 15.0,
+         "stir_speed": 10
+      },
+      {
+         "name":"Maltoserast = MALTOSE_REST",
+         "temperature": 71.0,
+         "duration": 15.0,
+         "stir_speed": 10
+      },
+      {
+         "name":"Jodtest = IODINE_REST",
+         "temperature": 71.0,
+         "duration": 0.0,
+         "stir_speed": 10
+      },
+      {
+         "name":"Endverzuckerung = SACCHARIFICATION",
+         "temperature": 77.0,
+         "duration": -1.0,
+         "stir_speed": 10
+      },
+      {
+         "name":"Läutern = PURIFICATION",
+         "temperature": 0.0,
+         "duration": 0.0,
+         "stir_speed": 0.0
+      },
+      {
+         "name":"Würze kochen = WORT_BOIL",
+         "temperature": 100.0,
+         "duration": 60.0,
+         "stir_speed": 5.0
+      },	
+   ]
+}>

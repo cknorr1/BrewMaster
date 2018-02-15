@@ -1,0 +1,65 @@
+.tab-pane > .tab-content-area{
+	-fx-font: 20px "Arial Narrow";
+	
+	-fx-background-image: url("metal-bg.png");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1000 800;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.tree-view, .tree-cell {
+	-fx-text-fill: #e3e3e3 ;
+	-fx-background-color: rgba(50, 50, 50, 0.3);
+}
+
+.tree-cell:sub-tree-item{
+     -fx-indent: 22;
+}
+.tree-cell:selected {
+	-fx-background-color: rgba(50, 50, 50, 0.5);
+    -fx-font-weight: bold;
+}
+.tree-cell {
+    -fx-padding: 0.5em 1.5em 0.75em 1.5em ;
+}
+.tree-cell:sub-tree-item {
+    -fx-padding: 0.25em ;
+}
+
+.chart{
+   -fx-font: 20px "Arial Narrow"; 
+   -fx-font-weight: bold;
+   -fx-background-color: rgba(50, 50, 50, 0.3);
+}
+
+.chart-plot-background {
+    -fx-background-color: rgba(300, 300, 300, 0.2);
+    -fx-text-fill: white ;
+}
+
+.axis {
+   -fx-font: 20px "Arial Narrow"; 
+    -fx-tick-label-fill: white;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+ 
+.chart-vertical-grid-lines {
+    -fx-stroke: black;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: black;
+}
+ 
+.axis-label {
+   -fx-text-fill: white; 
+}
+ 
+.axis-tick-mark {
+    -fx-stroke: black;
+    -fx-stroke-width: 3; 
+}
+.axis-minor-tick-mark {
+    -fx-stroke: black;
+}
